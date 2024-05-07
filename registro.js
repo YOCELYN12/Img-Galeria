@@ -1,25 +1,22 @@
-const Name = document.getElementById('Name')
-const email = document.getElementById('email')
-const password = document.getElementById('password')
-const RegistroForm = document.getElementById("RegistroForm")
-
-let nameLocalStorage 
-let mailLocalStorage
-let contrasenaLocalStorage 
-
-RegistroForm.addEventListener("submit", (e)=>{
+const RegistroForm = document.querySelector("#RegistroForm")
+RegistroForm.addEventListener("submit", (e) => {
     e.preventDefault()
-    localStorage.setItem("name", Name.value)
-    localStorage.setItem("mail", email.value)
-    localStorage.setItem("contrasena", password.value)
-    
-    nameLocalStorage = localStorage.getItem("name");
+    const Name = document.querySelector("#Name").value
+    const email = document.querySelector("#email").value
+    const password = document.querySelector("#password").value
 
-    if (Name.value === nameLocalStorage){
-        return alert('El usuario ya esta registrado!')
+
+    const Users = JSON.parse(localStorage.getItem("users")) || []
+    const isUserRegistered = Users.find(user => user.email === email)
+
+    if (isUserRegistered) {
+        return alert("El usuario ya esta registrado")
     }
-    alert('Registro exitosooooo! 😊')
 
+    Users.push({ Name: Name, email: email, password: password })
+    localStorage.setItem("users", JSON.stringify(Users))
+    alert("Registro exitoso")
     window.location.href = "login.html"
+
 })
 
