@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+body{
+    background: url(/Img-Galeria/fondo.webp) no-repeat;
+    background-size: cover;
+}
+.bodyDodge{
+    height: 103vh;
+    display: flex;
+   
+}
+
+.carrusel{
+    position: relative;
+    width: 35%;
+    height: 60%;
+    overflow: hidden;
+    border-radius:40px;
+    box-shadow: 0px 15px 25px rgba(0,0, 0, 0.50);
+    cursor: pointer;
+    margin-top: 10%;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    background: transparent;
+    border: 1px solid  rgb(183, 217, 219);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    text-align: center;
+    width: 50%;
+    height: 90%;
+}
+
+
+.carrusel div:hover > .capa{
+    visibility: visible;
+}
+
+.imagenes{
+    display: flex;
+    width: 100%;
+}
+
+.imagenes img{
+    height: 380px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {background-color: aliceblue;}
+#imge1:checked ~ .m1{
+    margin-left: 0;
+}
+
+#imge2:checked ~ .m2{
+    margin-left:-100%;
+}
+
+#imge4:checked ~ .m4{
+    margin-left: -200%;
+}
+
+#imge5:checked ~ .m5{
+    margin-left: -300%;
+}
+
+#imge6:checked ~ .m6{
+    margin-left: -400%;
+}
+
+
+.F-150{
+    height: 75vh;
+    display: flex;
+}
+
+.cardF-150{
+    position: relative;
+    width: 35%;
+    height: 75%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0,0, 0, 0.50);
+    margin-top: -38%;
+    margin-left: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.imgen{
+    display: flex;
+    width: 100%;
+}
+
+.imgen img{
+    height: 350px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+
+input{
+    display: none;
+}
+
+.dotsF-150{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dotsF-150 label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dotsF-150 label:hover {background-color: aliceblue;}
+#imagen1:checked ~ .m1{
+    margin-left: 0;
+}
+
+#imagen2:checked ~ .ma2{
+    margin-left:-100%;
+}
+
+#imagen3:checked ~ .ma3{
+    margin-left: -200%;
+}
+
+#imagen4:checked ~ .ma4{
+    margin-left: -300%;
+}
+
+#imagen5:checked ~ .ma5{
+    margin-left: -400%;
+}
+
+#imagen6:checked ~ .ma6{
+    margin-left: -500%;
+}
+
+#imagen7:checked ~ .ma7{
+    margin-left: -600%;
+}
+
+

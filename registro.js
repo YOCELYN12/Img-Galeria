@@ -1,3 +1,4 @@
+
 const RegistroForm = document.querySelector("#RegistroForm")
 RegistroForm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -19,4 +20,5 @@ RegistroForm.addEventListener("submit", (e) => {
     window.location.href = "login.html"
 
 })
+
 
