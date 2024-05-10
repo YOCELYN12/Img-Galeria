@@ -1,12 +1,11 @@
-const imagenes = document.querySelectorAll('.imgs')
+const fulImgBox = document.getElementById("fulImgBox"),
+fulImg = document.getElementById("fulImg");
 
-
-
-imagenes.forEach((imagenes)=>{
-    imagenes.addEventListener("click",()=>{
-        alert("das")
-    })
-})
-
-
-
+function openFulImg(reference){
+    fulImgBox.style.display = "flex";
+    fulImgBox.style.zIndex = "99"
+    fulImg.src = reference
+}
+function closeImg(){
+    fulImgBox.style.display = "none";
+}

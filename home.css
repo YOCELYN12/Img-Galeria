@@ -1,192 +1,150 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+*{
     padding: 0;
-    color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url('/Img-Galeria/fondo.webp');
 }
 
 
-.texto{
+.texto {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-
-
-
-body{
-    background: url(/Img-Galeria/fondo.webp) no-repeat;
-    background-size: cover;
-}
-.bodyDodge{
-    height: 103vh;
+.grupoimg1 {
     display: flex;
-   
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.carrusel{
-    position: relative;
-    width: 35%;
-    height: 60%;
-    overflow: hidden;
-    border-radius:40px;
-    box-shadow: 0px 15px 25px rgba(0,0, 0, 0.50);
-    cursor: pointer;
-    margin-top: 10%;
-    margin-left: 5%;
-    overflow: hidden;
+img {
+    width: 270px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1%;
+    margin-inline-start: 20px;
 }
 
-.capa{
+.div1 {
     position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.F-150 {
+    position: absolute;
+    top: 91%;
+    left: 50%;
+}
+
+.F150 {
+    position: absolute;
+    top: 91%;
+    left: 30%;
+}
+
+.Raptor {
+    position: absolute;
+    top: 121%;
+    left: 70%;
+}
+
+.raptor1 {
+    position: absolute;
+    top: 121%;
+    left: 30%;
+}
+
+.GTR {
+    position: absolute;
+    top: 151%;
+    left: 50%;
+}
+
+.R35 {
+    position: absolute;
+    top: 151%;
+    left: 30%;
+}
+
+.gtrR35 {
+    position: absolute;
+    top: 181%;
+    left: 50%;
+}
+
+.GTRr35 {
+    position: absolute;
+    top: 181%;
+    left: 30%;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
     top: 0;
-    background: transparent;
-    border: 1px solid  rgb(183, 217, 219);
-    border-radius: 20px;
-    backdrop-filter: blur(2px);
-    transition: all 500ms ease-out;
-    visibility: hidden;
-    text-align: center;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-gallery img{
+    cursor: pointer ;
+    transition: 1s ;
+}
+
+.img-gallery img:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:400px){
+    h1{
+        text-decoration: underline;
+
+    }
+
+    h1::before{
+        display: none;
+
+    }
+
+    h1 span{
+        padding: 0;
+    }
+
+}
+
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ful-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ful-img img {
     width: 50%;
-    height: 90%;
+    height: 80%;
+
 }
-
-
-.carrusel div:hover > .capa{
-    visibility: visible;
-}
-
-.imagenes{
-    display: flex;
-    width: 100%;
-}
-
-.imagenes img{
-    height: 380px;
-    width: 100%;
-    transition: all 0.15s ease;
-}
-
-input{
-    display: none;
-}
-
-.dots{
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-}
-
-.dots label{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: solid #fff 3px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 5px;
-}
-
-.dots label:hover {background-color: aliceblue;}
-#imge1:checked ~ .m1{
-    margin-left: 0;
-}
-
-#imge2:checked ~ .m2{
-    margin-left:-100%;
-}
-
-#imge4:checked ~ .m4{
-    margin-left: -200%;
-}
-
-#imge5:checked ~ .m5{
-    margin-left: -300%;
-}
-
-#imge6:checked ~ .m6{
-    margin-left: -400%;
-}
-
-
-.F-150{
-    height: 75vh;
-    display: flex;
-}
-
-.cardF-150{
-    position: relative;
-    width: 35%;
-    height: 75%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 15px 25px rgba(0,0, 0, 0.50);
-    margin-top: -38%;
-    margin-left: 50%;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.imgen{
-    display: flex;
-    width: 100%;
-}
-
-.imgen img{
-    height: 350px;
-    width: 100%;
-    transition: all 0.15s ease;
-}
-
-
-input{
-    display: none;
-}
-
-.dotsF-150{
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-}
-
-.dotsF-150 label{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: solid #fff 3px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 5px;
-}
-
-.dotsF-150 label:hover {background-color: aliceblue;}
-#imagen1:checked ~ .m1{
-    margin-left: 0;
-}
-
-#imagen2:checked ~ .ma2{
-    margin-left:-100%;
-}
-
-#imagen3:checked ~ .ma3{
-    margin-left: -200%;
-}
-
-#imagen4:checked ~ .ma4{
-    margin-left: -300%;
-}
-
-#imagen5:checked ~ .ma5{
-    margin-left: -400%;
-}
-
-#imagen6:checked ~ .ma6{
-    margin-left: -500%;
-}
-
-#imagen7:checked ~ .ma7{
-    margin-left: -600%;
-}
-
 

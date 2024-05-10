@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/GaleriaImg/Galeria/home.css">
 </head>
 
 <body>
-    br
+
     <br>
     <h1 class="texto">Galeria de autos</h1>
     <br>
@@ -18,85 +18,73 @@
     <hr>
 
 
-    <div class="bodyDodge">
 
-        <div class="carrusel">
 
-            <div class="imagenes" id="imagenes">
-
-                <input type="radio" name="slide" id="imge1" checked>
-                <input type="radio" name="slide" id="imge2">
-                <input type="radio" name="slide" id="imge4">
-                <input type="radio" name="slide" id="imge5">
-                <input type="radio" name="slide" id="imge6">
-
-                <img src="/Img-Galeria/Dodge/img1.jpg" class="m1 imgs" alt=" ">
-                <img src="/Img-Galeria/Dodge/img2.jpg" class="m2 imgs" alt=" ">
-                <img src="/Img-Galeria/Dodge/img4.jpg" class="m4 imgs" alt=" ">
-                <img src="/Img-Galeria/Dodge/img5.jpg" class="m5 imgs" alt=" ">
-                <img src="/Img-Galeria/Dodge/img6.jpg" class="im6 imgs" alt=" ">
-
-                <div class="capa">
-                    <p>PRUEBA</p>
-                </div>
-
-            </div>
-
-            <div class="dots">
-                <label for="imge1"></label>
-                <label for="imge2"></label>
-                <label for="imge4"></label>
-                <label for="imge5"></label>
-                <label for="imge6"></label>
-            </div>
-
+    <div class="ful-img" id="fulImgBox">
+        <img src="/Img-Galeria/Dodge/img1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+        <div>
+            <p class="autor">hola</p>
         </div>
-
     </div>
-    <div class="F-150">
 
-        <div class="cardF-150">
-            <div class="imgen">
 
-                <input type="radio" name="slide" id="imagen1">
-                <input type="radio" name="slide" id="imagen2">
-                <input type="radio" name="slide" id="imagen3">
-                <input type="radio" name="slide" id="imagen4">
-                <input type="radio" name="slide" id="imagen5">
-                <input type="radio" name="slide" id="imagen6">
-                <input type="radio" name="slide" id="imagen7">
+    <div class="div1 img-gallery">
+        <img src="/Img-Galeria/Dodge/img1.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img2.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img3.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img4.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img5.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img6.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
 
-                <img src="/Img-Galeria/F-150/f-150 1.jpg" class="ma1" alt="">
-                <img src="/Img-Galeria/F-150/f-150 2.jpg" class="ma2" alt="">
-                <img src="/Img-Galeria/F-150/f-150 3.jpg" class="ma3" alt="">
-                <img src="/Img-Galeria/F-150/f-150 4.jpg" class="ma4" alt="">
-                <img src="/Img-Galeria/F-150/f-150 5.png" class="ma5" alt="">
-                <img src="/Img-Galeria/F-150/f-150 6.jpg" class="ma6" alt="">
-                <img src="/Img-Galeria/F-150/f-150 7.jpg" class="ma7" alt="">
 
-            </div>
 
-            <div class="dotsF-150">
-                <label for="imagen1"></label>
-                <label for="imagen2"></label>
-                <label for="imagen3"></label>
-                <label for="imagen4"></label>
-                <label for="imagen5"></label>
-                <label for="imagen6"></label>
-                <label for="imagen7"></label>
-            </div>
+    <div class="F150 img-gallery ">
+        <img src="/Img-Galeria/F-150/f-150 1.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
 
-        </div>
+    <div class="F-150 img-gallery">
+        <img src="/Img-Galeria/F-150/f-150 2.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/F-150/f-150 4.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <div class="Raptor img-gallery ">
+        <img src="/Img-Galeria/F-150/f-150 5.png" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+    <div class="raptor1 img-gallery ">
+        <img src="/Img-Galeria/F-150/f-150 6.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/F-150/f-150 7.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+    <div class="GTR img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 1.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 2.jpg" onclick="openFulImg(this.src)" alt="">
 
     </div>
 
-</body>
+    <div class="R35 img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 3.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <div class="gtrR35 img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 4.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 5.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <div class="GTRr35 img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 6.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
 
 
 
-<script src="/Galeria/home.js"></script>
 
 
+    <script src="/GaleriaImg/Galeria/home.js"></script>
 </body>
 
 </html>
