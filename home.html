@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/GaleriaImg/Galeria/home.css">
+</head>
+
+<body>
+
+    <!--Contenedor del navbar, contiene la imagen del autor-->
+    <header class="header capa">
+        <div class="logo">
+            <img src="/Img-Galeria/Mi foto.jpeg" alt="">
+        </div>
+
+        <!--Navbar que se muestra en la parte superior de la galeria -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="https://es.dodge.com/find-dealer.html">Concesionarios Dodge</a></li>
+                <li><a href="https://www.ford.cr/autos/ranger-raptor">Concesionarios Ford </a></li>
+                <li><a href="https://www.nissancr.com/?gad_source=1">Concesionarios Nissan</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Contact</button></a>
+    </header>
+
+
+
+    <!--Contiene la img de referencia para que el JavaScript aplique la funcion de ampliar todas las img-->
+    <div class="ful-img" id="fulImgBox">
+
+        <img src="/Img-Galeria/Dodge/img1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+        <div>
+            <!--Datos del autor de las img-->
+            <p class="autor">Autor: Yocelyn Rivera</p>
+            <p class="autor">Tel:6280 9722</p>
+            <p class="autor">Proyecto Galeria</p>
+        </div>
+
+    </div>
+
+    <!--Primer contenedor de la img de Dodge-->
+    <div class="div1 img-gallery">
+        <img src="/Img-Galeria/Dodge/img1.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img2.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img3.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img4.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img5.jpg" onclick="openFulImg(this.src)" alt=" ">
+        <img src="/Img-Galeria/Dodge/img6.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <!--Contenedores de imagenes de ford-->
+    <div class="F150 img-gallery ">
+        <img src="/Img-Galeria/F-150/f-150 1.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+    <div class="F-150 img-gallery">
+        <img src="/Img-Galeria/F-150/f-150 2.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/F-150/f-150 4.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <div class="Raptor img-gallery ">
+        <img src="/Img-Galeria/F-150/f-150 5.png" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+    <div class="raptor1 img-gallery ">
+        <img src="/Img-Galeria/F-150/f-150 6.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/F-150/f-150 7.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+ <!--Contenedores de imagenes de GTR-->
+    <div class="GTR img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 1.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 2.jpg" onclick="openFulImg(this.src)" alt="">
+
+    </div>
+
+    <div class="R35 img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 3.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <div class="gtrR35 img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 4.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 5.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <div class="GTRr35 img-gallery">
+        <img src="/Img-Galeria/GTR-R35/GTR R25 6.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+
+    <script src="/GaleriaImg/Galeria/home.js"></script>
+</body>
+
+</html>

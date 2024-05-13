@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bodyregistro{
+    border: 0px  solid  red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background: url(/Img-Galeria/fondoregistro.jpeg) no-repeat;
+    background-size: cover; 
+}
+
+.divregistro{
+    background-color: aqua;
+    height: 58vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    place-content: center;
+    background: transparent;
+    border: 1px solid  rgb(183, 217, 219);
+    border-radius: 20px;
+    backdrop-filter: blur(3px); 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    
+}
+
+
+.password{
+    display: flex; 
+    position: absolute;
+    top: 44%;
+    left: 70px;
+    border: none;
+    font-size: 1em; 
+    transition: .5s;
+    padding: 0 35px 0 5px;
+    color: aliceblue;
+}
+
+.email{
+    position: absolute;
+    top: 30%;
+    left: 70px;
+    transform: translateY(-50);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    background: transparent;
+    padding: 0 35px 0 5px;
+    color: aliceblue;
+}
+
+.name{
+    position: absolute;
+    top: 15%;
+    left: 70px;
+    transform: translateY(-50);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    background: transparent;
+    padding: 0 35px 0 5px;
+    color: aliceblue;
+}
+
+
+.email:focus~label,
+.password:valid~.label{
+    top: -5px;
+}
+
+.inputname{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:280px;
+    height: 30px;
+    margin: 0 auto;
+    outline: none;
+    font-size: 1em;
+    top: -12vh;
+    left: -5%;
+    border: none;
+    background: transparent;
+}
+
+
+
+
+
+.inputPassword{
+    position: relative;
+    top: -3vh;
+    left: -11px;
+    display: flex;
+    flex-direction: column;
+    width:280px;
+    height: 30px;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+
+.inputEmail{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:280px;
+    height: 30px;
+    margin: 0 auto;
+    outline: none;
+    font-size: 1em;
+    top: -7vh;
+    left: -5%;
+    border: none;
+    background: transparent;
+}
+
+
+
+.boton{
+    position: absolute;
+    top: 60%;
+    left: 80px;
+    width: 280px;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+    color: aliceblue;
+}
+
+.texto{
+    position: absolute;
+    top: 80%;
+    left:60px ;
+    color: aliceblue;
+}
+
+
+
+.registro{
+    position: absolute;
+    top: 10%;
+    left: 170px;
+    color: aliceblue;
+   
+}
+
+
+
