@@ -1,6 +1,6 @@
 
 const RegistroForm = document.querySelector("#RegistroForm")
-RegistroForm.addEventListener("submit", (e) => {
+RegistroForm.addEventListener("submit", (e) =>{
     e.preventDefault()
     const Name = document.querySelector("#Name").value
     const email = document.querySelector("#email").value

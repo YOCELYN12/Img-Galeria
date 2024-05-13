@@ -10,25 +10,40 @@
 
 <body>
 
-    <br>
-    <h1 class="texto">Galeria de autos</h1>
-    <br>
-    <br>
-    <br>
-    <hr>
+    <!--Contenedor del navbar, contiene la imagen del autor-->
+    <header class="header capa">
+        <div class="logo">
+            <img src="/Img-Galeria/Mi foto.jpeg" alt="">
+        </div>
+
+        <!--Navbar que se muestra en la parte superior de la galeria -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="https://es.dodge.com/find-dealer.html">Concesionarios Dodge</a></li>
+                <li><a href="https://www.ford.cr/autos/ranger-raptor">Concesionarios Ford </a></li>
+                <li><a href="https://www.nissancr.com/?gad_source=1">Concesionarios Nissan</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Contact</button></a>
+    </header>
 
 
 
-
+    <!--Contiene la img de referencia para que el JavaScript aplique la funcion de ampliar todas las img-->
     <div class="ful-img" id="fulImgBox">
+
         <img src="/Img-Galeria/Dodge/img1.jpg" id="fulImg" alt="">
         <span onclick="closeImg()">X</span>
         <div>
-            <p class="autor">hola</p>
+            <!--Datos del autor de las img-->
+            <p class="autor">Autor: Yocelyn Rivera</p>
+            <p class="autor">Tel:6280 9722</p>
+            <p class="autor">Proyecto Galeria</p>
         </div>
+
     </div>
 
-
+    <!--Primer contenedor de la img de Dodge-->
     <div class="div1 img-gallery">
         <img src="/Img-Galeria/Dodge/img1.jpg" onclick="openFulImg(this.src)" alt=" ">
         <img src="/Img-Galeria/Dodge/img2.jpg" onclick="openFulImg(this.src)" alt=" ">
@@ -39,7 +54,7 @@
     </div>
 
 
-
+    <!--Contenedores de imagenes de ford-->
     <div class="F150 img-gallery ">
         <img src="/Img-Galeria/F-150/f-150 1.jpg" onclick="openFulImg(this.src)" alt="">
     </div>
@@ -59,6 +74,8 @@
         <img src="/Img-Galeria/F-150/f-150 7.jpg" onclick="openFulImg(this.src)" alt="">
     </div>
 
+
+ <!--Contenedores de imagenes de GTR-->
     <div class="GTR img-gallery">
         <img src="/Img-Galeria/GTR-R35/GTR R25 1.jpg" onclick="openFulImg(this.src)" alt="">
         <img src="/Img-Galeria/GTR-R35/GTR R25 2.jpg" onclick="openFulImg(this.src)" alt="">
@@ -79,9 +96,6 @@
     <div class="GTRr35 img-gallery">
         <img src="/Img-Galeria/GTR-R35/GTR R25 6.jpg" onclick="openFulImg(this.src)" alt="">
     </div>
-
-
-
 
 
     <script src="/GaleriaImg/Galeria/home.js"></script>

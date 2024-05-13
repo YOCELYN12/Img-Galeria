@@ -10,6 +10,7 @@ loginForm.addEventListener("submit", (e)=>{
     }
 
     alert ( `Bienvenido ${validUser.Name}`)
+    localStorage.setItem("usuarioIniciado",email)
     window.location.href = "home.html"
 
 })
